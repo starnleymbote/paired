@@ -1,0 +1,132 @@
+<resources>
+	 <!--edit these strings below accordingly-->
+    <string name="app_name">Paired</string>
+    <string name="appId" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="bannerAdUnit">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="googleMapDebugKey">YOUR_GOOGLE_MAP_API_KEY</string>
+    <string name="googleMapReleaseKey">YOUR_GOOGLE_MAP_API_KEY</string>
+     <string name="share_message" translatable="false">Download LinkUP app:
+        https://play.google.com/store/apps/details?id=YOUR_APP_ID_IN_GOOLE_PLAY
+    </string><!--change this link to your app store url-->
+    <!---mandatory editing ends here-->
+    
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="searching_loc">Searching your location…</string>
+    <string name="search_location">Search Location</string>
+    <string name="search">Search</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="location_not_found">Location not found, try again</string>
+    <string name="searchingLocation">Searching location…</string>
+    <string name="search_loc">Search Location</string>
+    <string name="recharge">Recharge Your Account To See Images And Send Chat Requests</string>
+    <string name="recharge_your_account">Recharge Your Account</string>
+    <string name="failed_loc">Failed to get Your Location</string>
+    <string name="default_notification_channel_id">TM</string>
+    <string name="na">NA</string>
+    <string name="chats">My Chats</string>
+    <string name="pending_chats">Pending Chats</string>
+    <string name="choose_package">Choose Package</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_likes">My Profile Likes</string>
+    <string name="my_profile_views">My Profile Views</string>
+    <string name="gpay_instructions">Do not close this Window while Payment is in Progress, After Payment Success This window
+        will close automatically
+    </string>
+    <string name="phone_sample">0XXXXXXXXX</string>
+    <string name="setup_recovery_email">Setup Password Recovery Email</string>
+    <string name="recharge_account">Recharge Account</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="failed_report">Failed to Block and Report try again</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="failed_delete">Failed to Delete, Try Again</string>
+    <string name="user_profile">User Profile</string>
+    <string name="title_activity_user_map">Map</string>
+    <string name="video_call">Video Call</string>
+    <string name="missed_calls">Missed Calls</string>
+    <string name="do_not_like_ads">You Don\'t like these Ads? Pay</string>
+    <string name="who_viewed_me">Who Viewed Me</string>
+    <string name="logout">Logout</string>
+    <string name="who_likes_me">Who Likes Me</string>
+    <string name="people_i_like">People I Like</string>
+    <string name="my_chats">My Chats</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="video_call_credits">Video Call Credits</string>
+    <string name="age_filter">Age Filter</string>
+    <string name="profile_images">Profile Images</string>
+    <string name="location">Location</string>
+    <string-array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="chatSex">
+        <item>All</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="chatUserType">
+        <item>All</item>
+        <item>Premium</item>
+    </string-array>
+    <string-array name="country">
+        <item>Tanzania</item>
+        <item>Kenya</item>
+        <item>Uganda</item>
+    </string-array>
+    <string-array name="marital">
+        <item>Single</item>
+        <item>Married</item>
+        <item>Divorced</item>
+        <item>In Relationship</item>
+    </string-array>
+    <string-array name="sex_orientation">
+        <item>Heterosexual</item>
+        <item>Homosexual</item>
+        <item>Bisexual</item>
+    </string-array>
+    <string-array name="drinking">
+        <item>Never</item>
+        <item>Always</item>
+        <item>Frequently</item>
+        <item>Normal</item>
+        <item>Little</item>
+    </string-array>
+    <string-array name="smoking">
+        <item>Never</item>
+        <item>Always</item>
+        <item>Frequently</item>
+        <item>Normal</item>
+        <item>Little</item>
+    </string-array>
+    <string-array name="education">
+        <item>Primary School</item>
+        <item>High School</item>
+        <item>University</item>
+        <item>Master</item>
+        <item>Doctorate</item>
+    </string-array>
+    <string-array name="religion">
+        <item>Christianity</item>
+        <item>Islam</item>
+        <item>Buddhism</item>
+        <item>Traditional</item>
+        <item>Atheism</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="ethnicity">
+        <item>Arab</item>
+        <item>Asian</item>
+        <item>Black</item>
+        <item>White</item>
+        <item>Hispanic Latino</item>
+        <item>Indian</item>
+        <item>Mixed</item>
+        <item>Other</item>
+    </string-array>
+   
+</resources>

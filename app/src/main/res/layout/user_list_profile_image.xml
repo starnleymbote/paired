@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_gravity="center"
+              android:layout_margin="0dp"
+              android:background="@drawable/user_profile_bg"
+              android:layout_height="wrap_content">
+    <ImageView
+            android:focusable="true"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/imgMyProfile"
+            android:src="@drawable/woman128"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:targetApi="m"
+            tools:ignore="UnusedAttribute"
+            android:contentDescription="@string/na"/>
+
+</LinearLayout>

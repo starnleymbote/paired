@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/callLayout"
+              android:layout_width="match_parent"
+              tools:context=".VideoCallActivity"
+              android:layout_height="match_parent">
+
+    <ImageView
+            android:visibility="visible"
+            android:layout_margin="8dp"
+            android:id="@+id/imgView"
+            android:src="@drawable/user"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="64dp"
+            android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+
+    <FrameLayout
+            android:visibility="gone"
+            android:layout_below="@+id/imgView"
+            android:id="@+id/callingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:background="@android:color/transparent"
+                android:layout_gravity="top|start"
+                android:orientation="vertical"
+                android:id="@+id/callingLayoutRemote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:background="@android:color/transparent"
+                android:layout_gravity="bottom|end"
+                android:orientation="vertical"
+                android:id="@+id/callingLayoutPreview"
+                android:layout_width="120dp"
+                android:layout_height="120dp">
+
+
+        </LinearLayout>
+
+        <Button
+                android:textColor="@color/red"
+                android:background="@drawable/calls_btn_bg"
+                android:textAllCaps="false"
+                android:text="End Call"
+                android:layout_gravity="bottom|start"
+                android:focusable="true"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="visible"
+                android:drawableStart="@drawable/cancelcall"
+                android:id="@+id/endInCallBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:visibility="visible"
+                android:textColor="@color/black"
+                android:padding="4dp"
+                android:background="@drawable/minutes_bg"
+                android:text=""
+                android:textSize="11sp"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/tvTimer"
+                android:layout_gravity="top|end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:background="@color/tmColor"
+            android:visibility="visible"
+            android:id="@+id/callsLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton
+                android:background="@drawable/calls_btn_bg"
+                android:focusable="true"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="gone"
+                android:src="@drawable/phonecall"
+                android:id="@+id/receivingCallBtn"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+
+        <TextView
+                android:textColor="@color/white"
+                android:padding="6dp"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:gravity="center"
+                android:text=""
+                android:id="@+id/tvCallingStatus"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="64dp"/>
+        <ImageButton
+                android:background="@drawable/calls_btn_bg"
+                android:focusable="true"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="visible"
+                android:src="@drawable/cancelcall"
+                android:id="@+id/cancellingCallBtn"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+        <ImageButton
+                android:background="@drawable/calls_btn_bg"
+                android:focusable="true"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:visibility="gone"
+                android:src="@drawable/close"
+                android:id="@+id/closeCallsBtn"
+                android:layout_width="64dp"
+                android:layout_height="64dp"/>
+    </LinearLayout>
+</RelativeLayout>

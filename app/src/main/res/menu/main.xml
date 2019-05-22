@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_location"
+          android:title="Location"
+          android:icon="@drawable/search"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+    <item android:id="@+id/action_gender"
+          android:title="Choose Gender"
+          android:icon="@drawable/gender"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+    <item android:id="@+id/action_filter_users"
+          android:title="Filter users"
+          android:icon="@drawable/filter"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+    <item android:id="@+id/action_my_chats"
+          android:title="My Chats"
+          android:icon="@drawable/chat_menu"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_profile"
+          android:title="My Profile"
+          android:icon="@drawable/user3"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_share"
+          android:title="Share NDating"
+          android:icon="@drawable/share2"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+</menu>

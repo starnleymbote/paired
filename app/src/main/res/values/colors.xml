@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#050A2A</color>
+    <color name="colorPrimaryDark">#050A2A</color>
+    <color name="colorAccent">#050A2A</color>
+    <color name="white">#FFF</color>
+    <color name="yellow">#F4D500</color>
+    <color name="yellowTwo">#FFDE00</color>
+    <color name="blue">#6599FF</color>
+    <color name="red">#F4D500</color>
+    <color name="black">#050A2A</color>
+    <color name="bgColor">#4f748a</color>
+    <color name="bgColorTwo">#334c5c</color>
+    <color name="afriBlue">#02A4D2</color>
+    <color name="afriBlueTwo">#0088B9</color>
+    <color name="afriBlueThree">#005C8F</color>
+    <color name="afriBlueFour">#1D4698</color>
+    <color name="afriRed">#ED680D</color>
+    <color name="splashColor">#050A2A</color>
+    <color name="logoColor">#050A2A</color>
+    <color name="havenBlack">#050A2A</color>
+    <color name="havenYellow">#FFB408</color>
+    <color name="driverBgColor">#CCCDDD</color>
+    <color name="sentBg">#050A2A</color>
+    <color name="receivedBg">#050A2A</color>
+    <color name="fontColor">#050A2A</color>
+    <color name="tmColor">#050A2A</color>
+    <color name="snow">#FFFAFA</color>
+    <color name="aliceBlue">#F0F8FF</color>
+    <color name="beige">#F5F5DC</color>
+    <color name="antiqueWhite">#FAEBD7</color>
+    <color name="linen">#FAF0E6</color>
+    <color name="navajoWhite">#050A2A</color>
+</resources>

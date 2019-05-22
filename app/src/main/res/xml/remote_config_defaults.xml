@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>tm_version</key>
+        <value>1</value>
+    </entry>
+    <entry>
+        <key>tm_message</key>
+        <value>We Wish You Lovely Moment. From Us Team</value>
+    </entry>
+    <entry>
+        <key>tm_title</key>
+        <value>Hello</value>
+    </entry>
+
+</defaultsMap>
+    <!-- END xml_defaults -->

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:id="@+id/rootView"
+        android:background="@android:color/transparent"
+        tools:context=".ChatActivity">
+
+  <com.google.android.gms.ads.AdView
+          android:layout_marginBottom="4dp"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/bannerAdUnit">
+    </com.google.android.gms.ads.AdView>
+
+        <ListView
+                android:layout_below="@+id/adViewChat"
+                android:dividerHeight="0dp"
+                android:divider="@null"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/chatsListView"
+                android:layout_alignParentTop="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        </ListView>
+        <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/writeMsgLayout"
+                android:padding="2dp"
+                android:background="@color/navajoWhite"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.vanniktech.emoji.EmojiButton
+                        android:background="@color/navajoWhite"
+                        android:id="@+id/btnEmojis"
+                        android:drawableStart="@drawable/inlove"
+                        android:layout_width="34dp"
+                        android:layout_height="40dp"/>
+                <com.vanniktech.emoji.EmojiEditText
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:id="@+id/editMessageBox"
+                        android:padding="4dp"
+                        android:hint="Message here"
+                        android:background="@drawable/edit_bg"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                />
+            <ImageButton
+                    android:onClick="sendMessage"
+                    android:id="@+id/btnSend"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:background="@drawable/mainbtn_bg"
+                    android:src="@drawable/send"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp" tools:ignore="NewApi"/>
+        </LinearLayout>
+</RelativeLayout>

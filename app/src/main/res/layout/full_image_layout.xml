@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="0dp"
+                android:id="@+id/fullImgLayout"
+                android:layout_gravity="center"
+                android:background="@drawable/profile_bg"
+                android:layout_height="wrap_content">
+    <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/btnCloseView"
+            android:src="@drawable/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/na"/>
+    <com.github.chrisbanes.photoview.PhotoView
+            android:layout_marginTop="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/man128"
+      android:id="@+id/fullImageView"
+      android:scaleType="centerInside"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+</RelativeLayout>

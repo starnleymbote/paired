@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "634952893945",
+    "firebase_url": "https://linkup-1025.firebaseio.com",
+    "project_id": "linkup-1025",
+    "storage_bucket": "linkup-1025.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634952893945:android:4e88f40c96aec065",
+        "android_client_info": {
+          "package_name": "com.mobitechstudio.linkup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634952893945-f66tcpdcbicug38vt7gd5cim28i3ndv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrqaQS6WQK7hkLgb07lB_wNOMMSQC_Td0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634952893945-f66tcpdcbicug38vt7gd5cim28i3ndv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

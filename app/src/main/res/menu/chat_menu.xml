@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_call"
+          android:title="Video Call"
+          android:icon="@drawable/videocall"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+    <item android:id="@+id/action_map"
+          android:title="Map"
+          android:icon="@drawable/worldwide"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+    <item android:id="@+id/action_block"
+          android:title="Block &amp; Report"
+          android:icon="@drawable/blockuser"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+    <item android:id="@+id/action_share"
+          android:title="Share NDating"
+          android:icon="@drawable/share_colored"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+</menu>

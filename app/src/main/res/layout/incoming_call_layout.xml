@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/tvCallTitle"
+            android:gravity="center"
+            android:text="You Have Incoming Call"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:drawableStart="@drawable/receivecall"
+                android:textAllCaps="false"
+                android:background="@drawable/btnsmall_bg"
+                android:layout_gravity="end"
+                android:text="Accept"
+                android:id="@+id/btnAcceptCall"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:layout_marginStart="4dp"
+                android:drawableStart="@drawable/cancelcall"
+                android:textAllCaps="false"
+                android:background="@drawable/btnsmall_bg"
+                android:layout_gravity="end"
+                android:text="Cancel"
+                android:id="@+id/btnCancelCall"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

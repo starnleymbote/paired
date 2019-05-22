@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<EditText
+        android:inputType="text"
+        android:layout_margin="8dp"
+        android:background="@drawable/edit_bg"
+        android:hint="Enter reason"
+        android:id="@+id/editTextReason"
+        android:layout_width="match_parent"
+        android:minHeight="80dp"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:drawableStart="@drawable/close"
+                android:textAllCaps="false"
+                android:background="@drawable/btnsmall_bg"
+                android:layout_gravity="end"
+                android:text="Cancel"
+                android:id="@+id/btnCancelReport"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:layout_marginStart="4dp"
+                android:drawableStart="@drawable/blockuser"
+                android:textAllCaps="false"
+                android:background="@drawable/btnsmall_bg"
+                android:layout_gravity="end"
+                android:text="Block And Report"
+                android:id="@+id/btnSendReport"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:background="@color/tmColor"
+        tools:context=".LoginActivity">
+        <LinearLayout
+                android:layout_alignParentTop="true"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Sign In"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                    android:id="@+id/tvCountryTitle"
+                    android:textColor="@color/white"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:text="Mobile number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+            />
+            <LinearLayout
+                    android:id="@+id/phoneLayout"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <Spinner
+                        style="@style/SpinnerThemeTwo"
+                        android:layout_width="160dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/spinnerCountry"
+                />
+                <EditText
+                        android:id="@+id/editPhone"
+                        android:inputType="phone"
+                        android:padding="5dp"
+                        android:hint="@string/phone_sample"
+                        android:background="@drawable/edit_bg"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="40dp"/>
+            </LinearLayout>
+
+
+            <EditText
+                    android:id="@+id/editPassword"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:hint="Your password"
+                    android:drawableLeft="@drawable/security"
+                    android:background="@drawable/edit_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+            <Button
+                    android:drawableStart="@drawable/log_in"
+                    android:id="@+id/btnSignIn"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btnform_bg"
+                    android:layout_gravity="end"
+                    android:text="Sign In"
+                    android:onClick="logMeIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"/>
+            <EditText
+                    android:visibility="gone"
+                    android:drawableStart="@drawable/email"
+                    android:drawableLeft="@drawable/email"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/editEmailAddress"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:hint="Enter your email"
+                    android:background="@drawable/edit_bg"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"/>
+            <Button
+                    android:visibility="gone"
+                    android:padding="4dp"
+                    android:layout_marginTop="4dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textAllCaps="false"
+                    android:text="Recover Password"
+                    android:textColor="@color/tmColor"
+                    android:background="@drawable/btnform_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:id="@+id/btnRecoverEmail"
+                    android:onClick="recoverPassword"
+                    android:layout_height="28dp"/>
+
+            <Button
+                    android:padding="4dp"
+                    android:layout_marginTop="4dp"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textAllCaps="false"
+                    android:text="Forgot password? Click Here"
+                    android:textColor="@color/tmColor"
+                    android:background="@drawable/btnform_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:id="@+id/btnForgotPassword"
+                    android:onClick="showRecoverForm"
+                    android:layout_height="28dp"/>
+            <Button
+                    android:padding="4dp"
+                    android:layout_marginTop="4dp"
+                    android:visibility="gone"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:textAllCaps="false"
+                    android:text="Don't have account? Register Here"
+                    android:textColor="@color/tmColor"
+                    android:background="@drawable/btnform_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="end"
+                    android:id="@+id/btnRegister"
+                    android:layout_height="28dp"
+                    android:onClick="saveData"
+            />
+        </LinearLayout>
+
+
+       <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adViewLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/bannerAdUnit">
+        </com.google.android.gms.ads.AdView>
+</RelativeLayout>

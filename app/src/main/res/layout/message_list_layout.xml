@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:padding="4dp"
+        android:longClickable="true"
+>
+    <LinearLayout
+            android:id="@+id/leftLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_bg"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:padding="4dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+    >
+    <com.vanniktech.emoji.EmojiTextView
+            android:padding="4dp"
+            android:text=""
+            android:autoLink="phone"
+            android:textColor="@color/black"
+            android:id="@+id/tvMessageLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+    />
+    <TextView
+
+            android:textColor="@color/fontColor"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:text=""
+            android:textSize="11sp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:id="@+id/tvMessageLeftTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    />
+    </LinearLayout>
+<LinearLayout
+        android:id="@+id/rightLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sent_message_bg"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        android:padding="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+>
+    <com.vanniktech.emoji.EmojiTextView
+            android:textColor="@color/black"
+            android:padding="4dp"
+            android:text=""
+            android:autoLink="phone"
+            android:id="@+id/tvMessageRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+
+            />
+    <LinearLayout
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:textColor="@color/fontColor"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp"
+                android:text=""
+                android:id="@+id/tvMessageRightTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textSize="11sp"
+                tools:ignore="RtlSymmetry,SmallSp"/>
+        <ImageView
+                android:layout_gravity="end"
+                android:visibility="visible"
+                android:scaleType="centerInside"
+                android:src="@drawable/tick"
+                android:id="@+id/imgSentTick"
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
+        <ImageView
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:scaleType="centerInside"
+                android:src="@drawable/tickread"
+                android:id="@+id/imgReceivedStatus"
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
+        <ImageView
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:scaleType="centerInside"
+                android:src="@drawable/tickread"
+                android:id="@+id/imgReceivedStatusTwo"
+                android:layout_width="16dp"
+                android:layout_height="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+

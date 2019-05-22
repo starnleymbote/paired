@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="0dp"
+            tools:context=".FacebookAdActivity"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent">
+    <LinearLayout
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:id="@+id/btnsLayoutAd"
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+            <ImageButton
+                    android:visibility="gone"
+                    android:id="@+id/closeAdBtn"
+                    android:src="@drawable/close"
+                    android:layout_width="40dp"
+                    android:background="@color/white"
+                    android:layout_height="40dp"/>
+            <TextView
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="AD"
+                    android:visibility="visible"
+                    android:id="@+id/tvCloseBtnHolder"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+            <Button
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fallingsky"
+                    android:id="@+id/btnRechargeNotification"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:background="@drawable/ads_btn_bg"
+                    android:text="@string/do_not_like_ads"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+
+        <com.facebook.ads.NativeAdLayout
+                android:background="@android:color/transparent"
+                android:id="@+id/native_ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+    </LinearLayout>
+</ScrollView>

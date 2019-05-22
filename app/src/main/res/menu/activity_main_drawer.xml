@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/user"
+                android:title="@string/my_profile"/>
+        <item
+                android:id="@+id/nav_edit_profile"
+                android:icon="@drawable/bio2"
+                android:title="@string/edit_profile"/>
+        <item
+                android:id="@+id/nav_edit_images"
+                android:icon="@drawable/gallery"
+                android:title="@string/profile_images"/>
+        <item
+                android:id="@+id/nav_age"
+                android:icon="@drawable/age"
+                android:title="@string/age_filter"/>
+        <item
+                android:id="@+id/nav_top_up"
+                android:icon="@drawable/cash"
+                android:title="@string/video_call_credits"/>
+        <item
+                android:id="@+id/nav_missed_call"
+                android:icon="@drawable/videocall"
+                android:title="@string/missed_calls"/>
+        <item
+                android:id="@+id/nav_notification_settings"
+                android:icon="@drawable/video_settings"
+                android:title="@string/notification_settings"/>
+        <item
+                android:id="@+id/nav_chats"
+                android:icon="@drawable/chat_menu"
+                android:title="@string/my_chats"/>
+
+        <item
+                android:id="@+id/nav_chats_out"
+                android:icon="@drawable/outbox"
+                android:title="@string/pending_chats"/>
+
+        <item
+                android:id="@+id/nav_my_likes"
+                android:icon="@drawable/users"
+                android:title="@string/people_i_like"/>
+        <item
+                android:id="@+id/nav_who_likes"
+                android:icon="@drawable/like"
+                android:title="@string/who_likes_me"/>
+        <item
+                android:id="@+id/nav_who_viewed"
+                android:icon="@drawable/eye"
+                android:title="@string/who_viewed_me"/>
+
+        <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/exit"
+                android:title="@string/logout"/>
+    </group>
+
+</menu>

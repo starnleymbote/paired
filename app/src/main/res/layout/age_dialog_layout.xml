@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+       >
+
+        <TextView
+                android:id="@+id/tvVipNotes"
+                android:padding="6dp"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:visibility="gone"
+                android:padding="8dp"
+                android:gravity="center"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:text="Looking For Users With Age Range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    <TextView
+            android:padding="4dp"
+            android:gravity="center"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="From Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+            <Spinner
+                    style="@style/SpinnerThemeTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerFrom"
+            />
+    <TextView
+            android:padding="4dp"
+            android:gravity="center"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="To Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+            <Spinner
+                    style="@style/SpinnerThemeTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerTo"
+            />
+    <TextView
+            android:padding="4dp"
+            android:gravity="center"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="Sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    <Spinner
+            android:entries="@array/sex"
+            style="@style/SpinnerThemeTwo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinnerViewSex"
+    />
+        <Button
+                android:drawableStart="@drawable/search"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:background="@drawable/mainbtn_bg"
+                android:textAllCaps="false"
+                android:text="Search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSaveFilter"
+        />
+    <Button
+            android:drawableStart="@drawable/close"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black"
+            android:background="@drawable/mainbtn_bg"
+            android:textAllCaps="false"
+            android:text="Close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel"
+    />
+    </LinearLayout>
+
+

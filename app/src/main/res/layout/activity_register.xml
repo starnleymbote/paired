@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:background="@color/tmColor"
+        tools:context=".RegisterActivity">
+<RelativeLayout
+        android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <LinearLayout
+            android:layout_marginBottom="60dp"
+            android:id="@+id/accountDetailsLayout"
+            android:padding="16dp"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+        <Button
+                android:drawableLeft="@drawable/log_in"
+                android:id="@+id/btnSignIn"
+                android:focusable="true"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textAllCaps="false"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btnform_bg"
+                android:layout_gravity="end"
+                android:layout_alignParentEnd="true"
+                android:text="Have account? Sign In Here"
+                android:onClick="goSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:drawableStart="@drawable/log_in"
+                android:layout_alignParentRight="true" tools:ignore="RtlHardcoded"/>
+        <TextView
+                android:id="@+id/tvTitle"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Register Here"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:id="@+id/editName"
+                android:inputType="textPersonName"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:hint="Your name"
+                android:drawableLeft="@drawable/name"
+                android:background="@drawable/edit_bg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+        <TextView
+                android:id="@+id/tvDobTitle"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:text="Birth Year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+        />
+        <LinearLayout
+                android:id="@+id/dobLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:background="@color/white"
+                    android:src="@drawable/dob"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+            <Spinner
+                    style="@style/SpinnerThemeTwo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerYear"
+            />
+        </LinearLayout>
+        <TextView
+                android:id="@+id/tvSexTitle"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:text="Your Sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+        />
+        <LinearLayout
+                android:id="@+id/sexLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:background="@color/white"
+                    android:src="@drawable/gender"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+            <Spinner
+                    android:entries="@array/sex"
+                    style="@style/SpinnerThemeTwo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerSex"
+            />
+        </LinearLayout>
+        <TextView
+                android:id="@+id/tvMaritalTitle"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:text="Marital Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+        />
+        <LinearLayout
+                android:id="@+id/maritalLyout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:background="@color/white"
+                    android:src="@drawable/marital"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+            <Spinner
+                    android:entries="@array/marital"
+                    style="@style/SpinnerThemeTwo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerMarital"
+            />
+        </LinearLayout>
+        <TextView
+                android:id="@+id/tvSexualOrientation"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:text="Sexual Orientation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+        />
+        <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/sexOrientationLyout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:background="@color/white"
+                    android:src="@drawable/sexorient"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+            <Spinner
+                    android:entries="@array/sex_orientation"
+                    style="@style/SpinnerThemeTwo"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerSexOrientation"
+            />
+        </LinearLayout>
+
+
+        <TextView
+                android:id="@+id/tvCountryTitle"
+                android:textColor="@color/white"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:text="Mobile number\n(Note: Will not be shared to other users)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+        />
+        <LinearLayout
+                android:id="@+id/phoneLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Spinner
+                    style="@style/SpinnerThemeTwo"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerCountry"
+            />
+            <EditText
+                    android:id="@+id/editPhone"
+                    android:inputType="phone"
+                    android:padding="5dp"
+                    android:hint="@string/phone_sample"
+                    android:background="@drawable/edit_bg"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"/>
+        </LinearLayout>
+
+        <EditText
+                android:id="@+id/editPassword"
+                android:inputType="textPassword"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:hint="Your password"
+                android:drawableStart="@drawable/security"
+                android:background="@drawable/edit_bg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+        <TextView
+                android:visibility="visible"
+                android:id="@+id/tvAccountType"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="Choose Account Type"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_height="wrap_content"/>
+        <RadioGroup
+                android:visibility="visible"
+                android:id="@+id/layoutAccountType"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_gravity="top|end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/radio_normal"
+                         android:onClick="onGenderRadioButtonClicked"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Free Account"
+                         android:drawableEnd="@drawable/usernormal"
+                         android:layout_marginEnd="4dp"
+                         android:checked="true"
+            />
+            <RadioButton
+                    android:onClick="onGenderRadioButtonClicked"
+                    android:layout_marginStart="4dp"
+                    android:drawableEnd="@drawable/vipsmall"
+                    android:id="@+id/radio_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VIP Account"
+            />
+        </RadioGroup>
+        <Button
+                android:id="@+id/btnRegister"
+                android:focusable="true"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textAllCaps="false"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btnform_bg"
+                android:layout_gravity="end"
+                android:text="Register"
+                android:onClick="registerUser"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawableStart="@drawable/cloudsave"
+               />
+    </LinearLayout>
+
+
+
+    <com.google.android.gms.ads.AdView
+            android:layout_below="@+id/accountDetailsLayout"
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adViewRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/bannerAdUnit">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+
+
+</ScrollView>
