@@ -436,7 +436,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                              //update MyLock Dialog
                              val builder = android.app.AlertDialog.Builder(this@MainActivity)
                              builder.setTitle("New Update")
-                             builder.setIcon(R.mipmap.paired_icon)
+                             builder.setIcon(R.mipmap.paired_circle_round)
                              builder.setMessage("There is new update of TM App in Play Store")
                              builder.setCancelable(false)
                              builder.setNegativeButton("Ignore") { dialog, which -> dialog.cancel() }
@@ -471,7 +471,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val mBuilder = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             createChannel(notificationManager)
             NotificationCompat.Builder(context)
-                .setSmallIcon(R.mipmap.paired_icon)
+                .setSmallIcon(R.mipmap.paired_circle_round)
                 .setLargeIcon(bitmap)
                 .setContentTitle(title)
                 .setChannelId("TM")
@@ -483,7 +483,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         } else {
             NotificationCompat.Builder(context)
-                .setSmallIcon(R.mipmap.paired_icon)
+                .setSmallIcon(R.mipmap.paired_circle_round)
                 .setLargeIcon(bitmap)
                 .setContentTitle(title)
                 .setContentText(msg)
@@ -1137,7 +1137,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         builder.setTitle("Notice")
         builder.setMessage(msg)
         builder.setCancelable(true)
-        builder.setIcon(R.drawable.logo)
+        builder.setIcon(R.mipmap.paired_circle_round)
 
         builder.setPositiveButton("Ok") { dialog, which ->
             dialog.cancel()

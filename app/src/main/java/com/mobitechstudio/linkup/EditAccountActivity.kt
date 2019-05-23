@@ -473,7 +473,7 @@ class EditAccountActivity : AppCompatActivity(), UploadStatusDelegate {
         builder.setTitle("Important Hint")
         builder.setMessage("Make Sure You Selected Correct Birth Year And Sex, They Affect Who You Can Communicate")
         builder.setCancelable(false)
-        builder.setIcon(R.mipmap.paired_icon)
+        builder.setIcon(R.mipmap.paired_circle_round)
         builder.setNegativeButton("Correct") { dialog, _ ->
             dialog.cancel()
         }

@@ -236,7 +236,7 @@ class ChatActivity : AppCompatActivity() {
         builder.setTitle(title)
         builder.setMessage(msg)
         builder.setCancelable(false)
-        builder.setIcon(R.mipmap.paired_icon)
+        builder.setIcon(R.mipmap.paired_circle_round)
         builder.setPositiveButton("Top Up") { _, _ ->
             tinyDB.putString("topUpType", "Call")
             goToStorePayments()
@@ -439,7 +439,7 @@ class ChatActivity : AppCompatActivity() {
         builder.setTitle(title)
         builder.setMessage(msg)
         builder.setCancelable(false)
-        builder.setIcon(R.mipmap.paired_icon)
+        builder.setIcon(R.mipmap.paired_circle_round)
         builder.setPositiveButton("Get Unlimited Chats") { _, _ ->
             tinyDB.putString("topUpType", "Normal")
             goToStorePayments()
@@ -805,7 +805,7 @@ class ChatActivity : AppCompatActivity() {
                     goCall()
 
                 } else {
-                    toastMsgShort("Allow NDating To Access These Permissions. Calling Will Not Work")
+                    toastMsgShort("Allow Paired To Access These Permissions. Calling Will Not Work")
                 }
                 return
             }

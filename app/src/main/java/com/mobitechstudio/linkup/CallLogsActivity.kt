@@ -80,7 +80,7 @@ class CallLogsActivity : AppCompatActivity() {
         builder.setTitle("Confirm Delete")
         builder.setMessage("Are you sure you want to Delete All Call Logs?")
         builder.setCancelable(false)
-        builder.setIcon(R.mipmap.paired_icon)
+        builder.setIcon(R.mipmap.paired_circle_round)
         builder.setPositiveButton("Yes") { _, _ ->
             toastMsgShort("Deleting Call Logs")
             deleteCallLogs()

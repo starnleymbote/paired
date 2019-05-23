@@ -95,7 +95,7 @@ class NotificationsBroadCastReceiver: BroadcastReceiver(){
 
             createChannel(notificationManager)
             NotificationCompat.Builder(context)
-                .setSmallIcon(R.drawable.logo)
+                .setSmallIcon(R.mipmap.paired_circle_round)
                 .setLargeIcon(bitmap)
                 .setContentTitle(title)
                 .setChannelId("TM") //change channel ID here

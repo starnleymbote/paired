@@ -2,7 +2,7 @@ package com.mobitechstudio.linkup
 
 class Constants(){
     companion object {
-        const val baseUrl = "http://163.172.185.224/" //change this to your hosting/cloud account domain
+        const val baseUrl = "http://163.172.177.201/" //change this to your hosting/cloud account domain
         //http://pairedmatch.mobitechtechnologies.com/
         //http://163.172.185.224/
         

@@ -183,7 +183,7 @@ class AmazonPayActivity : AppCompatActivity(), PurchasingListener {
         builder.setTitle("Confirm")
         builder.setMessage("Are you sure you want to close?")
         builder.setCancelable(false)
-        builder.setIcon(R.mipmap.paired_icon)
+        builder.setIcon(R.mipmap.paired_circle_round)
         builder.setPositiveButton("Yes") { _, _ ->
             finish()
         }

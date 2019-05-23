@@ -231,7 +231,7 @@ class FCMMessagingService:FirebaseMessagingService() {
         val mBuilder = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             createChannel(notificationManager)
             NotificationCompat.Builder(applicationContext)
-                .setSmallIcon(R.mipmap.paired_icon)
+                .setSmallIcon(R.mipmap.paired_circle_round)
                 .setLargeIcon(bitmap)
                 .setContentTitle(title)
                 .setChannelId(Constants.fcmNotificationTopic)
@@ -243,7 +243,7 @@ class FCMMessagingService:FirebaseMessagingService() {
 
         } else {
             NotificationCompat.Builder(applicationContext)
-                .setSmallIcon(R.mipmap.paired_icon)
+                .setSmallIcon(R.mipmap.paired_circle_round)
                 .setLargeIcon(bitmap)
                 .setContentTitle(title)
                 .setContentText(msg)

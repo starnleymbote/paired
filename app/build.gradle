@@ -5,7 +5,7 @@ apply plugin: 'io.fabric'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.mobitechstudio.linkup"
+        applicationId "com.mobitechstudio.paired"
         minSdkVersion 18
         targetSdkVersion 28
         versionCode 1
